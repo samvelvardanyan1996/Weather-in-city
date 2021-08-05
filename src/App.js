@@ -30,7 +30,6 @@ const App = () => {
         id="standard-helperText"
         label="City Name"
         defaultValue=""
-        helperText="Some important text"
         onChange={handleInputChange}
       />
       <div>
