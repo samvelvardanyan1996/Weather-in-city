@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   devServer: {
-    contentBase: './dist',
+    contentBase: './public',
   },
   devtool: 'inline-source-map',
   module: {
@@ -25,17 +25,25 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Document',
+      title: 'Weather In City',
     }),
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
     clean: true,
     publicPath: '/',
   },
