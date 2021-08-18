@@ -1,4 +1,7 @@
 import React from "react";
+import menu from "../svg/menu.svg";
+import moon from "../svg/moon.svg";
+// import sun from "../svg/sun.svg";
 
 const Mobile = () => {
   return (
@@ -6,11 +9,11 @@ const Mobile = () => {
       <div className="flexColumn menuContainer mobile">
         <div className="iconHrefs">
           <div className="menu">
-            <img className="menuIcon" src="../src/svg/menu.svg" alt="Menu" />
+            <img className="menuIcon" src={menu} alt="Menu" />
           </div>
           <div className="theme">
-            <img className="moonlight" src="../src/svg/moon.svg" alt="moonlight" />
-            {/* <img className="sunlight" src="../src/svg/sun.svg" alt="sunlight" /> */}
+            <img className="moonlight" src={moon} alt="moonlight" />
+            {/* <img className="sunlight" src={sun} alt="sunlight" /> */}
           </div>
         </div>
         <div className="flexColumn textHrefs displayNone">
