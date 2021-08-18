@@ -1,5 +1,5 @@
 import React from "react";
-import menu from "../svg/menu.svg";
+import menu from "./svg/menu.svg";
 import moon from "../svg/moon.svg";
 // import sun from "../svg/sun.svg";
 
